@@ -4,18 +4,21 @@
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fjoshdholtz%2FDeckUI%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/joshdholtz/DeckUI)
 ![](https://img.shields.io/github/license/joshdholtz/DeckUI)
 [![](https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat)](https://swift.org/package-manager/)
-[![](https://img.shields.io/badge/twitter-@joshdholtz-blue.svg?style=flat)]([https://twitter.com/joshdholtz](https://twitter.com/joshdholtz))
+[![](https://img.shields.io/badge/twitter-@joshdholtz-blue.svg?style=flat)](<[https://twitter.com/joshdholtz](https://twitter.com/joshdholtz)>)
 
-DeckUI is a Swift DSL (domain specific language) for writing slide decks in Xcode. It allows for quick creation of  slides and content in a language and environment you are familiar with.
+DeckUI is a Swift DSL (domain specific language) for writing slide decks in Xcode. It allows for quick creation of slides and content in a language and environment you are familiar with.
 
-But _why_? 
+But _why_?
 
 Well, I made this because:
+
 - I was bored on an airplane
 - Wanted to use this as a demo for future conference talk on Swift DSLs
 - Need something more customizable than markdown for writing slide decks and more codey than Keynote
 
-👉 Watch [Introducing DeckUI - Write slide decks in Swift](https://www.youtube.com/watch?v=FraeH6OeJPY) on my YouTube channel for more explaination and full demo
+👉 Watch [Introducing DeckUI - Write slide decks in Swift](https://www.youtube.com/watch?v=FraeH6OeJPY) on my YouTube channel for more explanation and full demo
+
+👉 Watch [Pushing to the App Store using Swift](https://www.youtube.com/watch?v=SxozYjWMhgU) (7 minutes), one of the first talks public to talks to embrace DeckUI! Also, checkout the [GitHub repo](https://github.com/FullQueueDeveloper/Deck-2022-09-13) for the talk!
 
 ## ✨ Features
 
@@ -24,7 +27,7 @@ Well, I made this because:
 - [x] Build decks without knowing any SwiftUI
   - With `Deck`, `Slide`, `Title`, `Words`, `Bullets`, `Media`, `Columns`
 - [x] Use `RawView` to drop any SwiftUI view
-  - Fully interactable and great for demos
+  - Fully interactive and great for demos
 - [x] Display code with `Code`
   - Use up and down arrows to highlight lines of code as your talking about them
 - [x] Support videos on `Media`
@@ -70,7 +73,7 @@ extension ContentView {
                             Words("Columns")
                         }
                     }
-                    
+
                     Column {
                         Media(.remoteImage(URL(string: "https://www.fillmurray.com/g/200/300")!))
                     }
@@ -207,7 +210,7 @@ Slide {
         Column {
             // Content
         }
-        
+
         Column {
             // Content
         }
@@ -222,7 +225,7 @@ Slide {
         Column {
             // Content
         }
-        
+
         Column {
             // Content
         }
@@ -241,6 +244,7 @@ Slide {
 ### Code
 
 `Code` is a super specifi version `Words`. It will:
+
 - Display text as monospace
 - Scroll vertical if bigger than screen
 - Highlight lines of code when up and down arrows are pressed
@@ -282,7 +286,7 @@ Slide {
 
 struct CounterView: View {
     @State var count = 0
-    
+
     var body: some View {
         Button {
             self.count += 1
